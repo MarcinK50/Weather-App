@@ -29,23 +29,23 @@ const updateUI = data => {
   ).toLocaleDateString('en', { weekday: 'long' });
   const todayDate = new Date(
     forecast.DailyForecasts[0].Date
-  ).toLocaleDateString('en', {
+  ).toLocaleDateString('pl', {
     day: 'numeric',
     month: 'long',
     year: 'numeric',
   });
   const day1 = new Date(
     forecast.DailyForecasts[1].Date
-  ).toLocaleDateString('en', { weekday: 'short' });
+  ).toLocaleDateString('pl', { weekday: 'short' });
   const day2 = new Date(
     forecast.DailyForecasts[2].Date
-  ).toLocaleDateString('en', { weekday: 'short' });
+  ).toLocaleDateString('pl', { weekday: 'short' });
   const day3 = new Date(
     forecast.DailyForecasts[3].Date
-  ).toLocaleDateString('en', { weekday: 'short' });
+  ).toLocaleDateString('pl', { weekday: 'short' });
   const day4 = new Date(
     forecast.DailyForecasts[4].Date
-  ).toLocaleDateString('en', { weekday: 'short' });
+  ).toLocaleDateString('pl', { weekday: 'short' });
 
   thumb.innerHTML = `
   <div class="day">${today}</div>
