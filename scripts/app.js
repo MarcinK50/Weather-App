@@ -26,7 +26,7 @@ const updateUI = data => {
 
   const today = new Date(
     forecast.DailyForecasts[0].Date
-  ).toLocaleDateString('en', { weekday: 'long' });
+  ).toLocaleDateString('pl', { weekday: 'long' });
   const todayDate = new Date(
     forecast.DailyForecasts[0].Date
   ).toLocaleDateString('pl', {
