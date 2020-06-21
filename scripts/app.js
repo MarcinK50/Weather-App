@@ -60,7 +60,6 @@ const updateUI = data => {
   <div class="temperature">
       <span>${currentWeather.Temperature.Metric.Value}</span>&deg;C
   </div>
-  <div class="text">${currentWeather.WeatherText}</div>
   `;
 
   precipitation.innerHTML = `${forecast.DailyForecasts[0].Day.PrecipitationProbability} %`;
